@@ -16,13 +16,13 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+        required: true
+        default: 'true'
 #  schedule:
 #    - cron: 0 8 * * 5
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/coolsnowwolf/openwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
